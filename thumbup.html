@@ -1,0 +1,925 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="CREATED" CONTENT="20171216;131900000000000">
+	<META NAME="CHANGEDBY" CONTENT="Student">
+	<META NAME="CHANGED" CONTENT="20171216;132300000000000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 0.8in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+		H1 { margin-bottom: 0.04in; direction: ltr; widows: 2; orphans: 2 }
+		H1.western { font-family: "Arial", serif; font-size: 16pt }
+		H1.cjk { font-family: "Arial"; font-size: 16pt }
+		H1.ctl { font-family: "Arial"; font-size: 16pt; font-weight: normal }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112431451-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112431451-1');
+</script>
+
+	
+		<title>ThumbUp Engine </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/mainHelpMe.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">BeomGeun Choi</a>
+				<nav>
+			<a href= "thumbupeng.html"><span style ="color:white">KR</span>/
+EN<a href="#menu">메뉴</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html"><b>홈</b></a></li><br>
+					<b>게임</b>
+					<li><a href="helpme.html">Help Me!</a></li>
+					<li><a href="swellorshrink.html">Swell! or Shrink!</a></li>
+					<li><a href="OutandIn.html">OutAndIn</a></li>
+					<li><a href="roterote.html">RoteRote</a></li>
+					<b>커스텀 엔진</b>
+					<li><a href="thumbup.html"><span style = "color:brown">ThumbUp Engine</span></a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+		
+			<div id="heading" >
+				<h1>ThumbUp Engine</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+
+					<!-- Elements -->
+						<div class="row">
+							<div class="col-12 col-12-medium">
+
+								<!-- Text -->
+
+	<img src = "images/banner2.jpg" width = "100%"><br><br>
+	<a href = "https://www.youtube.com/watch?v=oC6L-pUaSPA"><video controls loop muted playsinline src="images/helpmedemo.mp4"></video></a>
+	
+		<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+<h2><img src = "images/teteam.png"></h2>
+</a><div style="DISPLAY: none">
+	
+	
+		
+
+<UL>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 - 
+Technical Director</B></FONT></SPAN></SPAN></FONT></P>
+	<UL>
+<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
+	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Technical Advices
+</B><LI><B>Main System of engine</B></LI><LI><B>StateManager</B></LI><LI><B>Json File IO System</B></LI><LI><B>Object Factory based on Components<LI><B>Fmod SoundManager</B></LI><LI><B>Replaying System</B></LI><LI><B>Pause System</B></LI><LI><B>Option State</B></LI><LI><B>Game Logic<LI><B>Most of Menu States<LI><B>Logging Syetem<LI><B>Intergrated Imgui</B></LI></B></LI></B></LI></B></LI></B></LI></B></LI><br></FONT></SPAN></FONT></P>
+		
+		</P>
+	</UL>
+</UL>
+
+
+<UL>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>유현준  -  Producer</B></FONT></SPAN></SPAN></FONT></P>
+	<UL>
+<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
+	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Graphics
+</B><LI><B>Animation</B></LI><LI><B>Sprites</B></LI><LI><B>Camera<LI><B>Scheduling
+</B></LI><br></FONT></SPAN></FONT></P>
+		
+		</P>
+	</UL>
+</UL>
+
+<UL>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>박경욱 - Lead Designer</B></FONT></SPAN></SPAN></FONT></P>
+	<UL>
+<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
+	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Physics
+</B><LI><B>Player Controller </B></LI><LI><B>Map Editor</B></LI><LI><B>Gravity<LI><B>Scheduling</LI></b>
+</B></LI><br></FONT></SPAN></FONT></P>
+		
+		</P>
+	</UL>
+</UL>
+
+	
+</UL>
+</div>
+	
+	<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+<h2><img src = "images/tetech.png"></h2>
+</a><div style="DISPLAY: none">
+	<H1 CLASS="western" ALIGN=CENTER STYLE="margin-top: 0in; margin-bottom: 0.08in; border-top: none; border-bottom: 4.50pt solid #000001; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.01in; padding-left: 0in; padding-right: 0in"><A NAME="_pb88gupstjwp"></A>
+<FONT SIZE=6>TECHNICAL OVERVIEW</FONT></H1>
+<H1 CLASS="western"><A NAME="_j3f4xogyurt2"></A><BR><BR>
+</H1>
+<H1 CLASS="western"><A NAME="_73dm8fgqr2gq"></A><IMG SRC="images/GAM200_ThumbUp_TDD_html_df4baf35.png" NAME="image8.png" ALIGN=BOTTOM HSPACE=12 VSPACE=12 WIDTH=662 HEIGHT=346 BORDER=0></H1>
+<P STYLE="margin-left: 0.25in; margin-bottom: 0.11in; line-height: 107%">
+<BR><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Systems:</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Application,
+		GameLogic, ObjectFactory, Physics, Graphics, StateManager and Sound
+		Manager</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Components</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Transform,
+		Controller, Sprite, Body, Button, Trigger and Animation</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Technologies</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">SOIL, GLM,
+		OpenGL, FMOD, custom 2D Physics, Jsoncpp and Imgui</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Overview of
+	Engine Architecture</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Graphics</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It renders
+			all objects</P>
+		</UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Application:	</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Window is
+			opened by application, and it control window events. For example,
+			minimizing the window, alt+tab, control +  shift +  delete. 
+			</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It detects
+			and manages input.</P>
+		</UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">StateManager 
+		</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Controls all
+			states</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">All states
+			are loaded as json file, and json file loading is easily executed
+			by json class.</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Loaded level
+			information are automatically added on object factory and it
+			allows easy access to objects.</P>
+		</UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Object Factory</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It controls
+			all object in the game with ObjectID</P>
+		</UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Physics</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It calculates
+			all the physics and collisions  in the game 
+			</P>
+		</UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Sound Manager</P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It handles
+			all sounds in the game</P>
+		</UL>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western" STYLE="page-break-before: always"><A NAME="_78hvzaxwohe"></A>
+CODING METHODS</H1>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 115%">
+<BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">There are some
+	regulations that team has made in order to have some kind of cod
+	standard for the team. 
+	</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">any member
+		variables should begin with letter ‘m’</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">any parameter
+		variables should begin with letter ‘p’</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">comment if
+		variable names are not obvious</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">File naming
+	conventions.</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Filenames need
+		to be related with code. If a file contains Vector class and its
+		file purpose is only for Vector class, then the filename should be
+		named as vector.cpp.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Almost of all
+		files are named after the purpose code.</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">ThumbUp is
+	using git as source control.</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Link:
+		<A HREF="https://git.digipen.edu/projects/thumbup"><FONT COLOR="#1155cc"><U>https://git.digipen.edu/projects/thumbup</U></FONT></A></P>
+	</UL>
+</UL>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western" STYLE="page-break-before: always"><A NAME="_ja84ucew0by5"></A>
+DEBUGGING TOOLS</H1>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">ThumbUp Engine
+	has a simple console to print out data and debug information and
+	there is also debug assert which can stop player to go further if
+	some bugs happen.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Using crtdbg,
+	memory leaks are checked every debug times and this will be printed
+	out in the output.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">In the Imgui in
+	our game’s debug mode, there are some controlling functions on the
+	Imgui such as sound manager, camera manager, object manager, level
+	manager and archetype editor. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On Sound
+	manager, any types of sound files in sound folder can be played and
+	muted. On the camera manager, changing all values of camera is
+	available.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%"> In the object
+	manager, all objects are appeared and all of property of objects
+	will be appeared as components they have. For example, in the
+	transform, there are position, scale, rotation, in the sprite, there
+	are colors, texture. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">In the level
+	manager, all of levels in the levels folder will be appeared. Saving
+	current state is available and loading other level is also
+	available.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">In the
+	archetype editor, many types of archetype can be made. Archetype’s
+	name, object style, components can be set.</P>
+</UL>
+<P STYLE="line-height: 115%"><BR><BR>
+</P>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+</P>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<br>
+<H1 CLASS="western" STYLE="page-break-before: always"><A NAME="_ho459y5t2w99"></A>
+GRAPHICS<BR> <IMG SRC="images/GAM200_ThumbUp_TDD_html_3d308f45.png" NAME="image5.png" ALIGN=LEFT HSPACE=12 WIDTH=566 HEIGHT=353 BORDER=0><BR CLEAR=LEFT>
+</H1>
+<P STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Graphics
+	Pipeline receives all objects’ sprite and animation information.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It sends vertex
+	data to shaders.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It also sends
+	camera matrix information to vertex Shader.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On Vertex
+	Shader, it process graphics rendering so that objects can be
+	displayed on world coordination.</P>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Order of how
+	objects are rendered.</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On ThumbUp
+		Engine, Graphics Engine receives data from sprite and animation in
+		order to render objects.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Graphics
+		system is processed right after all systems are performed so that
+		rendering will not interfere of objects’ movements.</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Camera</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Camera works
+		as global variable and its member variables can be accessed so that
+		it is easy to control Camera’s features.</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">ThumbUp Engine
+	is using SDL to have API and OpenGL to render it on window.</P>
+</UL>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 115%">
+<BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Loading Assets</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Sprites and
+		animations are added through ObjectFactory and textures are loaded
+		through ObjectFactory as well. And Level Manager has control over
+		ObjectFactory, so it knows when objects can be created depending on
+		levels.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the level
+		manager, it reads json file and levels with using json class. On
+		the json class, converting json file to c++ stream and factory will
+		spawn objects as json files</P>
+	</UL>
+</UL>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+</P>
+<H1 CLASS="western"><A NAME="_z1ogdcbsdi7x"></A>PHYSICS 
+</H1>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">What techniques
+	will be used to implement the physics design?</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Physics checks
+		every each object collision, and resolve collision through the
+		loop.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Explicit Euler
+		integrator is used to calculate acceleration and velocity of
+		objects.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Broad phase is
+		function that only calculates colliding objects, but for now it
+		works same as narrow phase.</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">What type of
+	integration will you use (Euler, Improved Euler, Verlet,
+	Runge-Kutta)?</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">ThumbUp Engine
+		is currently using Explicit Euler Integrator</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%"><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">(v</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">1</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">
+		= </SPAN></FONT><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">v</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">0</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">
+		+ </SPAN></FONT><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">a</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">0</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">Δt,
+		</SPAN></FONT><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">x</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">1</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">
+		= </SPAN></FONT><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">x</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">0</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">
+		+ </SPAN></FONT><FONT COLOR="#333333"><B><SPAN STYLE="background: #ffffff">v</SPAN></B></FONT><FONT COLOR="#333333"><SUB><SPAN STYLE="background: #ffffff">0</SPAN></SUB></FONT><FONT COLOR="#333333"><SPAN STYLE="background: #ffffff">Δt),</SPAN></FONT>
+		these equations are called explicit Euler equations. These
+		equations maintains the motion of the an object and calculates
+		acceleration as force affected by mass.</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">What type of
+	space partitioning will you use?</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Since our game
+		only uses axis-aligned bounding box (AABB), we do need space
+		partitioning tree. Also, since map editor is grid based, space is
+		automatically partitioned. 
+		</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">What type of
+	collision detection will you use?</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">AABB collision
+		check, using edges of two rectangular, calculates distance of Two
+		Objects and compare whether it is inside of range or not.</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western"><A NAME="_j23v2q5oa09"></A>PLAYER CONTROL 
+</H1>
+<P STYLE="margin-left: 0.25in; margin-bottom: 0in"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Rote Rote is a
+	single player game.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">The Keyboard is
+	used as player control for the whole game.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Mouse is not
+	applicable in game.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">For option,
+	level selection and pause states, arrow keys are used for selection
+	and spacebar for decision.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On games, left
+	and right arrows are used for direction keys and spacebar enables
+	player to jump.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Player is able
+	to attach on the walls, hold onto wall and jump wall to wall.</P>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
+</P>
+<H1 CLASS="western" STYLE="page-break-before: always"><A NAME="_m7u5713m9gkw"></A>
+EDITOR 
+</H1>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">There are two
+	editors in our game.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">One is Imgui
+	and the other is in game editor.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the Imgui,
+	all of objects can be adjusted with slide bar and keyboard input by
+	pressing control and mouse left click</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Another game
+	editor can be spawned by pressing F7. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Map editor can
+	load its level and level objects can be fixed with mouse control.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Pressing no.1
+	can spawn a box object. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Objects can be
+	selected by clicking left button of mouse and it becomes editable. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Locations of
+	objects can be fixed by moving mouse. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">While object is
+	editable, scale can be adjusted by pressing right click of mouse and
+	dragging it.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Location and
+	scale will be fixed when mouse button is released. 
+	</P>
+</UL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H1 CLASS="western"><A NAME="_i7a1qmpls46z"></A>AUDIO 
+</H1>
+<P STYLE="margin-left: 0.25in; margin-bottom: 0in"><IMG SRC="images/GAM200_ThumbUp_TDD_html_8accb3ba.png" NAME="image3.png" ALIGN=BOTTOM HSPACE=12 VSPACE=12 WIDTH=662 HEIGHT=399 BORDER=0></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">ThumbUp game
+	engine’s sound manager is operated in the system. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">To play sound,
+	sound system must be created and sound files must be loaded. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Each sound has
+	its own sound id. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">With sound ID,
+	multiple sounds can be played and paused or resumed. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Adjusting
+	volume is also supported. Using Drag and drop , sound files can be
+	added in the sounds folder.</P>
+</UL>
+<H1 CLASS="western"><A NAME="_GoBack"></A><A NAME="_9lsx0s2dxkuk"></A>
+Appendix A</H1>
+<P STYLE="margin-bottom: 0in; line-height: 115%">Tools and Editor
+Instructions</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Map Editor</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Instruction :
+		Map editor is only available in DEBUG MODE and it is only for
+		developer not users.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">F7 : Launch
+		Map editor, and turn off Map editor</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">F5 : Launch
+		IMGUI EDITOR</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Mouse left
+		click : making object editable.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Mouse right
+		click : making object editable.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Translation :
+		when object is editable, it can be moved by mouse based on grid.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Scale : While
+		pressing left control key, pressing left mouse click, move mouse
+		and releasing mouse click can scale objects on scale of grid.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Rotate: While
+		pressing R, press mouse left click, move mouse and releasing mouse
+		click can rotate object.</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Create Object:</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%">		Press 1, create
+box</P>
+<P STYLE="margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in; line-height: 115%">
+Press 2, create wall</P>
+<P STYLE="margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in; line-height: 115%">
+Press 3, create trigger 180</P>
+<P STYLE="margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in; line-height: 115%">
+Press 4, create  trigger 90</P>
+<P STYLE="margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in; line-height: 115%">
+Press 5, create button</P>
+<UL>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Delete Object
+		: make object editable and press backspace. (In Map editor state,
+		Imgui deleting should not be used)</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Level load &amp;
+		save : load and save level by using Imgui.</P>
+	</UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">How to use
+	Imgui</P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the Imgui,
+		there is object manager, all of object's’ property can be changed</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the Imgui,
+		there is archetype editor, archetype can be added easily based on
+		components</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the Imgui,
+		there is level manager, saving all object in the level is available
+		and loading json level file is also supported</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">On the Imgui,
+		there is sound manger, playing all sounds in the sound folder is
+		available</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">PNG file and
+		MP3 file Drag and Drop is supported, if the file is dropped , the
+		file will be copied in the texture or sound folder  
+		</P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0in; line-height: 115%"> 
+</P>
+
+</div>
+
+
+<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+<h2><img src = "images/tepostmortem.png"></h2>
+</a><div style="DISPLAY: none">
+<BODY LANG="en-US" DIR="LTR">
+<H2 CLASS="western" ALIGN=CENTER STYLE="margin-top: 0.14in; margin-bottom: 0in; line-height: 100%"><A NAME="_gjdgxs"></A>
+<IMG SRC="images/ThumbUp.png" NAME="image2.png" ALIGN=BOTTOM HSPACE=12 VSPACE=12 WIDTH=602 HEIGHT=151 BORDER=0></H2>
+<H2 CLASS="western" STYLE="margin-top: 0.14in; margin-bottom: 0in; line-height: 100%"><A NAME="_30j0zll"></A>
+<FONT FACE="Trebuchet MS, serif"><FONT SIZE=3><B>Introduction</B></FONT></FONT></H2>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 136%"><FONT SIZE=3><SPAN STYLE="background: #ffffff">2D
+platformer puzzle game where a player has to rotate the world to
+solve puzzles.</SPAN></FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in; line-height: 137%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 137%"><FONT FACE="Trebuchet MS, serif"><FONT SIZE=3><B>Development
+Team</B></FONT></FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>Team
+Thumbup was borned by students who wanted to improve coding skills
+through cooperating each other. BeomGeun and HyunJun decided to work
+together since both live in a apartment and worked together on
+previous semester. Team Thumbup decided that to get KyungOok on the
+team since he had similar opinion as well. We decided to work
+together because no one was exceedingly better than others. We
+believe that this would challenge ourselves to do more works and
+develop ourselves as game developers. </FONT>
+</P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>In
+addition to that we have worked on making game Engine during summer
+vacation which gave us basic structure of the Engine. </FONT>
+</P>
+<P STYLE="margin-top: 0.14in; margin-bottom: 0in; line-height: 100%"><B>Tools</B></P>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Paint.net
+	was used to modify textures. </FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Power
+	Point was used to create menus and HUD</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Visual
+	Studio 2015 and custom ThumbUp Engine were used. </FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Imgui
+	was a debugging tool for the game</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Jsoncpp
+	was a parser for reading json file.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>OpenGL
+	to support rendering </FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>GLM
+	to support math libraries </FONT>
+	</P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3><B>What went Right:</B></FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Communication</B></I></FONT></P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+		talked a lot during summer vacation what game we are going to make
+		for the next semester. Through a lot of discussions and watching a
+		lot of video games on YouTube, we got inspirations from Megaman
+		Antonion and we decided to make game where the world rotates.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+		have promised that we would have to discuss what we had to do for
+		each milestone and made specific plans. Whenever we had trouble
+		understanding goals for each milestone, we learned that it was
+		really great to discuss with professor because questions that he
+		gave us really helped us to see details of the game.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Also,
+		we talked to each other to check status of the game. Where were we
+		heading and why we were heading toward the goal. </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Since
+		we lived close to each other, communication became easier because
+		we can talk whenever we can in person</FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=2>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Plans
+	and Schedules</B></I></FONT></P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Since
+		all team members have little experiences in making game, we grew
+		our insights to estimate of what we can do in a week. In addition,
+		we have worked on project before, we made clear and specific goals
+		for each week and schedules it better than last semester.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Lesson
+		that we learned from last semester is that prepare everything in
+		ahead. BeomGeun and HyunJun had trouble making installation before
+		submission. It was definitely our faults however, this time we
+		wanted to make sure that we are not making same mistakes again.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+		looked over the rubric table early. We could know our status very
+		easily. This enabled our team to make a huge progress on the game.
+		This also was veryful when we made some schedules of our game.</FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=3>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Simplicity</B></I></FONT></P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+		believe that RoteRote mechanism is very simple but it was
+		cumbersome to design how we were going to implement how we are
+		going to make the game. Once, mechanism was developed making game
+		became easier.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Since
+		its solving puzzles by rotating the world, it was easy to implement
+		levels and come up with ideas to design levels. </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Since
+		the game design is very simple, when main game logic was
+		implemented,developing speed of our game was rapidly accelerated.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Map
+		editor is not fully developed but we had a simple one, it was
+		enough to make some levels because our game is so simple</FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=4>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>PlayTesting</B></I></FONT></P>
+</OL>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+	learned that having a bunch of playtest definitely help developers
+	to have better games. So we made small playtests and surveys
+	whenever we added new features on game. There were many feedbacks
+	that we did expect however, it definitely made it clear for
+	teammates to see what we can work on it</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Based
+	on playtests and getting feedbacks from normal people made us think
+	new features that we have not considered it before.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Feedbacks
+	helped us what direction we had to work on it and even though we
+	worked on satisfying users’ feedbacks there were more feedbacks
+	and dissatisfaction from players. On this part, we learned that
+	there is never ending on developing a game.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<OL START=5>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Professor
+	David</B></I></FONT></P>
+</OL>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Professor
+	David definitely helped us find out detail/specific goals for the
+	game. </FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>From
+	splash screen, window resolution, location of player, blocks, jumps
+	and etc… He mentioned that we never consider it was that
+	important. We learned that these little things can have huge impact
+	on player to learn about game.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Also,
+	he helped us push toward to become professional when making a game. </FONT>
+	</P>
+</OL>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3><B>What went Wrong:</B></FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Communication</B></I></FONT></P>
+</OL>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Even
+	though we had a good communication at first, because of busy
+	individual schedules, we sometime had a hard time with the
+	communication between team members.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+	hesitated to point out the flaw that each member has. It caused our
+	game slow progress.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=2>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3><I><B>Time
+	management</B></I></FONT></P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>We
+		did not utilize time very well. We worked really hard at the last
+		week because we had to focus on finishing assignments. If we
+		managed our time more efficiently, we believe that RoteRote would
+		turn out more delicately. </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=3>Also,
+		this affected final exams as well. Due to the accumulated
+		assignments we had little time to study for finals.</FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<OL START=3>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3><I><B>Relying too
+	much on summer workshop engine</B></I></FONT></P>
+	<OL TYPE=a>
+		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>During the summer
+		vacation, professors and upper classmates helped us build simple
+		Engine structure. We thought that it was perfect to add more
+		features on it. However, we found out that it had problems with
+		custom matrix class and had trouble with it for while. </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>made more features
+		and polished better for the project. </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>for levels and saved
+		data.</FONT></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+</P>
+<OL START=4>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3><I><B>Too much
+	talking with each other</B></I></FONT></P>
+</OL>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>Since we are very
+	close to each other, we often joke a lot while working on a project.
+	This might make our game’s progress slow.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>We believe that this
+	has affected on other teams as well. </FONT>
+	</P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=5>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3><I><B>Theme (Level
+	Design)</B></I></FONT></P>
+</OL>
+<OL TYPE=a>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>We did not have a
+	consistent game theme, game character was astronaut  but, however,
+	game menu was icon based theme.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>For this semester, we
+	were not able to make various levels that uses our game concept
+	since we focused on implementing game concept.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.5in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-left: 0.5in; margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3><B>How we managed to solve
+problems:</B></FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>Whenever
+we encountered problems with technical issues, we always asked TA and
+professor. With this help, we were able to solve many problems that
+we have faced. Also, we got many useful tips whenever we asked for
+help so that we would not make mistakes </FONT>
+</P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>To
+solve problem of theme, we will recruit someone for the artist. This
+will be very helpful to parts of arts.</FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>In
+terms of understanding, at the beginning we relied on summer workshop
+engine too much because of this we had to go through Engine system
+again. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3><B>Future</B></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3>Generally, we learned many
+lessons through this engine/game development.</FONT></P>
+<P STYLE="text-indent: 0.5in; margin-bottom: 0in"><FONT SIZE=3>We
+believe that we definitely need to work on time management so that we
+can evenly work on project, assignment and study for class. Also, we
+learned that communication is very important among team members, we
+are glad that we did not neglect communication among team members.</FONT></P>
+<P STYLE="margin-bottom: 0in"><A NAME="_1fob9te"></A><FONT SIZE=3>	Also,
+we learned that we need to respect other people in a lab, we need to
+consider that this place is not granted for us. </FONT>
+</P>
+</div>
+
+
+<P ALIGN=LEFT STYLE="margin-left: 0.83in; margin-top: 0.19in; margin-bottom: 0.19in; font-variant: small-caps; line-height: 100%; widows: 2; orphans: 2"><A NAME="_GoBack"></A>
+<BR><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>	
+
+								
+	</code></pre>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Accumsan montes viverra</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+						</section>
+						<section>
+							<h4>Sem turpis amet semper</h4>
+							<ul class="alt">
+								<li><a href="#">Dolor pulvinar sed etiam.</a></li>
+								<li><a href="#">Etiam vel lorem sed amet.</a></li>
+								<li><a href="#">Felis enim feugiat viverra.</a></li>
+								<li><a href="#">Dolor pulvinar magna etiam.</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Magna sed ipsum</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
