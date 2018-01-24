@@ -79,15 +79,26 @@
 		
 
 <UL>
-	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>BeomGeun Choi - Test Manager</B></FONT></SPAN></SPAN></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=6 FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 -  Test Manager</B></FONT></SPAN></SPAN></FONT></P>
 	<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
-	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Map Editor
-</B><LI><B>ObjectManager</B></LI><LI><B>Applying All Physics to the Objects</B></LI><LI><B>Gravity Zone</B></LI><LI><B>Art Assets<LI><B>Splash Image</B></LI></B></LI></B></LI><br></FONT></SPAN></FONT></P>
+<LI><FONT SIZE=4 ><B>
+	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4 ><B>Map Editor
+</B><br>Map Editor is for efficient level making. Using mouse and keyboard to adjust objects’ position and keyboard to adjust objects’ scale , rotation , texture , style. 
+When the map editor turns off, the objects’ information is saved as text file and Loading and Saving previous levels is also available. During the run-time, level test is can be done.Because of some UI for the instructions, player can make some levels easily 
+<LI><B>ObjectManager</B><br>ObjectManager is to manage objects. It initiate objects’ information and saves objects’ position, scale, rotation, color, texture, object style.
+ It allocates memory to save array, which has each objects’ information. 
+ In the level, the objects’ information from the text file made by Map Editor automatically is saved in the object Manager and load the level</LI><LI><B>Applying All Physics to the Objects</B></LI>
+Using the ObjectManager, Applying all the physics to all objects as the objectstyle.
+<LI><B>Gravity Zone</B></LI>If the ball enters the gravity zone, Adding some force to ball and revert the  ball's direction.
+<LI><B>Breakable Wall</B></LI>공으로 파괴할수있는 벽, 사용자의 설정에 따라서 부숴지기에 필요한 횟수를 바꿀 수 있음.
+<LI><B>Art Assets</B></LI>
+Making most of art assets in the game<LI><B>Score System</B></LI>There are three stars in the level. When the player satisfy the win condition, saving the number of stars which player got is done.
+and On the level secletion state, player can know how many stars they got. During the playtest, most of players tried to get all starts.
+<LI><B>Instruction System</B></LI>For the easy game, there are many "how to play" images</B></LI><br></FONT></SPAN></FONT></P>
 		
 		</P>
 	</UL>
-</UL>
+</UL> 	
 
 
 <UL>
@@ -366,23 +377,21 @@ Future </B></FONT></FONT></SPAN></FONT></P>
 
 
 </SPAN></FONT>
-<P CLASS="western" STYLE="margin-bottom: 0.11in"><BR><BR>
+
 </P>
 </div>
-
+</section>
 
 
 
 
 </SPAN></FONT>
 
-
-
-					<div class="copyright"><center>
-						&copy; formatted by  <a href="https://templated.co/">TEMPLATED.co </a></center>
 			
-				</div>
+</B><p align="center"><FONT SIZE=12 STYLE="font-size: 7pt">&copy; This webpage is formatted by  <a href="https://templated.co/">TEMPLATED.co </p></FONT></a></center>
 
+
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
