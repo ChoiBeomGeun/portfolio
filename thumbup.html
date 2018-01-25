@@ -100,16 +100,29 @@ EN<a href="#menu">메뉴</a>
 		
 
 <UL>
-	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 - 
-Technical Director</B></FONT></SPAN></SPAN></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=6 FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 -  Technical Director</B></FONT></SPAN></SPAN></FONT></P>
 	<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
-	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Technical Advices
-</B><LI><B>Main System of engine</B></LI><LI><B>StateManager</B></LI><LI><B>Json File IO System</B></LI><LI><B>Object Factory based on Components<LI><B>Fmod SoundManager</B></LI><LI><B>Replaying System</B></LI><LI><B>Pause System</B></LI><LI><B>Option State</B></LI><LI><B>Game Logic<LI><B>Most of Menu States<LI><B>Logging Syetem<LI><B>Intergrated Imgui</B></LI></B></LI></B></LI></B></LI></B></LI></B></LI><br></FONT></SPAN></FONT></P>
+<FONT SIZE=4 ><B>
+
+
+<LI><B>Main System of  Engine</B><br>전반전인 엔진의 구조를 제작함. 
+</LI><LI><B>StateManager</B></LI>
+엔진내에서 스테이트를 관리하는 스테이트매니저. AddState,MoveState,RestartState등 다양한 기능이 있음
+<LI><B>Json File IO System</B></LI>Jsoncpp Libary를 이용해 Json Class FileIO를 만들어 ReadFile 및 WriteFile을 용이하게 함.
+<LI><B>Object Factory based on Components</B></LI>유니티,언리얼등의 상용 엔진과 비슷한 컴포넌트 베이스의 오브젝트 팩토리. 각각의 오브젝트는 다른 컴포넌트를 가지고 있음. 
+<LI><B>Fmod SoundManager</B></LI>
+FMOD를 이용한 SoundManager. PlaySound, StopSound,PauseSound등 다양한 기능이 존재함<LI><B>Replaying System</B></LI>
+레벨단계에서 플레이어의 위치,애니메이션 정보등을 프레임 단위로 저장해 레벨 클리어시 사용자의 플레이를 다시 재생하는 시스템
+<LI><B>Pause System</B></LI>ESC키를 누르면  이전 스테이트가 저장된 상태에서 Pause State로 전환됨. 게임이 정지되고, Pause UI가 나타남. 게임을 재개하거나 다시 시작하거나 레벨 선택 단계로 갈수 있음
+<LI><B>Option State</B></LI>기본적인 옵션 스테이트, 해상도 조절 , 풀스크린 모드, 사운드 온오프이 가능함.<LI><B>Game Logic</B></LI>Win Condition,Lose Condition등을 관리해주는 GameLogic
+</B></LI><LI><B>Most of Menu State</LI>Main State,Level Select State등 대부분의 스테이트를 제작함<LI><B>Logging System</LI>
+<B>레벨의 난이도를 체크하기위해서 게임의 플레이 타임, 죽은 횟수, 클리어 시간등을 체크하는 로그 시스템
+<LI><B>Intergrated Imgui</LI>Imgui Libary를 이용해 효율적인 디버깅을 가능하게 함. 모든 오브젝트들의 속성을 조절할 수 있는 오브젝트매니저, 아키타입을 추가할 수있는 아키타입 에디터, 현재의 레벨을 저장하거나 불러올 수 있는 레벨매니저, 게임내의 사운드를 재생시킬 수 있는 사운드매니저가 포함되어 있습니다.  
+<br></FONT></SPAN></FONT></P>
 		
 		</P>
 	</UL>
-</UL>
+</UL> 
 
 
 <UL>
@@ -152,18 +165,18 @@ Technical Director</B></FONT></SPAN></SPAN></FONT></P>
 <BR><BR>
 </P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Systems:</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">엔진 시스템:</P>
 	<UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Application,
 		GameLogic, ObjectFactory, Physics, Graphics, StateManager and Sound
 		Manager</P>
 	</UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Components</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">컴포넌트</P>
 	<UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Transform,
 		Controller, Sprite, Body, Button, Trigger and Animation</P>
 	</UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Technologies</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">외부 라이브러리</P>
 	<UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">SOIL, GLM,
 		OpenGL, FMOD, custom 2D Physics, Jsoncpp and Imgui</P>
@@ -172,50 +185,37 @@ Technical Director</B></FONT></SPAN></SPAN></FONT></P>
 <P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
 </P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Overview of
-	Engine Architecture</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">엔진 구조의 요약</P>
 	<UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Graphics</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It renders
-			all objects</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">모든 오브젝트들을 렌더링함</P>
 		</UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Application:	</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Window is
-			opened by application, and it control window events. For example,
-			minimizing the window, alt+tab, control +  shift +  delete. 
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">윈도우 창을 생성하고 윈도우 이벤트들을 관리함. 예를 들면 창의 최소화, Alt-tab, control + alt + delete등. 
 			</P>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It detects
-			and manages input.</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">키보드 입력 또한 감지함. </P>
 		</UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">StateManager 
 		</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Controls all
-			states</P>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">All states
-			are loaded as json file, and json file loading is easily executed
-			by json class.</P>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Loaded level
-			information are automatically added on object factory and it
-			allows easy access to objects.</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">모든 스테이트들을 관리함</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">모든 스테이트들은 JSON 파일을 통해 로드되며 JSON 파일 로딩은 json class를 통해 이루어짐</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">로딩된 레벨 정보는 자동으로 오브젝트 팩토리에 추가가 되서 오브젝트에 쉬운 접근을 가능하도록함</P>
 		</UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Object Factory</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It controls
-			all object in the game with ObjectID</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">모든 오브젝트의 정보들을 오브젝트 ID와 함께 가지고 있음</P>
 		</UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Physics</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It calculates
-			all the physics and collisions  in the game 
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">게임안의 모든 물리에 관한 계산을 진행함 
 			</P>
 		</UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Sound Manager</P>
 		<UL>
-			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">It handles
-			all sounds in the game</P>
+			<LI><P STYLE="margin-bottom: 0in; line-height: 115%">게임안의 모든 사운드를 관리함</P>
 		</UL>
 	</UL>
 </UL>
@@ -227,24 +227,18 @@ CODING METHODS</H1>
 <BR>
 </P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">There are some
-	regulations that team has made in order to have some kind of cod
-	standard for the team. 
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">저희 팀은 코드를 짤 때 몇가지 규칙을 만들었습니다.
 	</P>
 	<UL>
-		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">any member
-		variables should begin with letter ‘m’</P>
-		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">any parameter
-		variables should begin with letter ‘p’</P>
-		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">comment if
-		variable names are not obvious</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">맴버 변수 이름의 시작은 "m"</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">함수 패러미터 변수 이름의 시작은 "p"</P>
+		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">명확하지 않은 변수이름은 코맨트를 단다. </P>
 	</UL>
 </UL>
 <P STYLE="margin-bottom: 0in; line-height: 115%"><BR>
 </P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">File naming
-	conventions.</P>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 115%">파일 네이밍 규칙</P>
 	<UL>
 		<LI><P STYLE="margin-bottom: 0in; line-height: 115%">Filenames need
 		to be related with code. If a file contains Vector class and its
