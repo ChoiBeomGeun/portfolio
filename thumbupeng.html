@@ -76,16 +76,34 @@
 		
 
 <UL>
-	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 - 
-Technical Director</B></FONT></SPAN></SPAN></FONT></P>
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=6 FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>BeomGeun Choi -  Technical Director</B></FONT></SPAN></SPAN></FONT></P>
 	<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 8pt"><B>
-	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 8pt"><B>Technical Advices
-</B><LI><B>Main System of engine</B></LI><LI><B>StateManager</B></LI><LI><B>Json File IO System</B></LI><LI><B>Object Factory based on Components<LI><B>Fmod SoundManager</B></LI><LI><B>Replaying System</B></LI><LI><B>Pause System</B></LI><LI><B>Option State</B></LI><LI><B>Game Logic<LI><B>Most of Menu States<LI><B>Logging Syetem<LI><B>Intergrated Imgui</B></LI></B></LI></B></LI></B></LI></B></LI></B></LI><br></FONT></SPAN></FONT></P>
+<FONT SIZE=4 ><B>
+
+
+<LI><B>Main System of  Engine</B><br>Making main structure of game engine. 
+</LI><LI><B>StateManager</B></LI>
+Managing multiple states in the game. There are many functions such as "AddState,MoveState,RestartState".
+<LI><B>Json File IO System</B></LI>Using Jsoncpp Libary,I made a Json Class FileIO to read and write Jsonfile easily .
+<LI><B>Object Factory based on Components</B></LI>
+Like unity and unreal engine, object factory based on components, each object has each component.
+<LI><B>Fmod SoundManager</B></LI>
+Using FMOD, SoundManager. There are many functions such as "PlaySound, StopSound,PauseSound"<LI><B>Replaying System</B></LI>
+In the level state, saving player's position , animation information per a frame and replaying the information when the players satisfy the win condition of the game.
+<LI><B>Pause System</B></LI>Using pressing ESC key,the previous state is saved and state will be converted to the Pause State.
+The game is pauseed and Pause UI is appeared. Player can resume the game , restart the game , go to level selection state
+<LI><B>Option State</B></LI>Basic Option State, There are "changing the resolution, setting fullscreen, sound on/off<LI><B>Game Logic</B></LI>
+GameLogic manages the Win Condition,Lose Condition in the game.
+</B></LI><LI><B>Most of Menu State</LI>I made almost states such as Main State,Level Select State and so on.<LI><B>Logging System</LI>
+<B>To check the difficulty of the level,Logging system checks playing time,how many times players are dead, clear time
+<LI><B>Intergrated Imgui</LI>
+Using Imgui libary,this enables efficient debugging, there are objectmanager it can adjust all property of objects , 
+archetype editor it can add a new archetype, levelmanager it can save and load certain levels, soundmanager it can play and stop musics in the game
+<br></FONT></SPAN></FONT></P>
 		
 		</P>
 	</UL>
-</UL>
+</UL> 
 
 
 <UL>
@@ -766,11 +784,7 @@ vacation which gave us basic structure of the Engine. </FONT>
 		features on it. However, we found out that it had problems with
 		custom matrix class and had trouble with it for while. </FONT>
 		</P>
-		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>made more features
-		and polished better for the project. </FONT>
-		</P>
-		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=3>for levels and saved
-		data.</FONT></P>
+
 	</OL>
 </OL>
 <P STYLE="margin-bottom: 0in; line-height: 100%"><BR>
