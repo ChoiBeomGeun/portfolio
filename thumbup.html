@@ -66,7 +66,7 @@ EN<a href="#menu">메뉴</a>
 					<li><a href="helpme.html">Help Me!</a></li>
 					<li><a href="swellorshrink.html">Swell! or Shrink!</a></li>
 					<li><a href="OutandIn.html">OutAndIn</a></li>
-					<li><a href="roterote.html">
+					<li><a href="thumbup.html">
 					<span style = "color:brown">RoteRote</a></li>
 				
 					
@@ -92,6 +92,8 @@ EN<a href="#menu">메뉴</a>
 	<center><img src = "images/ThumbUp_teamstation_color.jpg" width = "70%"><br><br></center><br>
 			
 			<a href = "https://www.youtube.com/watch?v=EcVEedi6ssY&t=2s" target ="_blank">	<video controls loop muted playsinline src="images/RoteRote_trailer.mp4" width ="100%"></video></a>
+			
+				<a href ="https://drive.google.com/file/d/1S3tmlimks1hyN3j-YoJZ28CEDE3sAtof/view?usp=sharing" target ="_blank"> <center><img src = "images/rotedown.png"></center></a><br>
 			<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
 
 
@@ -103,9 +105,11 @@ EN<a href="#menu">메뉴</a>
 		
 
 <UL>
+<a href="codes/MyRoteRoteCode.zip" title="리소스 다운받기" download="MyRoteRoteCode.zip">코드 다운받기</a>
 	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=6 FACE="Arial"><SPAN LANG="ko-KR"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>최범근 -  Technical Director</B></FONT></SPAN></SPAN></FONT></P>
 	<UL>
 <FONT SIZE=4 ><B>
+
 
 
 <LI><B>Main System of  Engine</B><br>전반전인 엔진의 구조를 제작함. 
@@ -115,14 +119,32 @@ EN<a href="#menu">메뉴</a>
 <LI><B>Object Factory based on Components</B></LI>유니티,언리얼등의 상용 엔진과 비슷한 컴포넌트 베이스의 오브젝트 팩토리. 각각의 오브젝트는 다른 컴포넌트를 가지고 있음. 
 <LI><B>Fmod SoundManager</B></LI>
 FMOD를 이용한 SoundManager. PlaySound, StopSound,PauseSound등 다양한 기능이 존재함<LI><B>Replaying System</B></LI>
+<img src = "images/replay.png" width = "70%"><br>
 레벨단계에서 플레이어의 위치,애니메이션 정보등을 프레임 단위로 저장해 레벨 클리어시 사용자의 플레이를 다시 재생하는 시스템
-<LI><B>Pause System</B></LI>ESC키를 누르면  이전 스테이트가 저장된 상태에서 Pause State로 전환됨. 게임이 정지되고, Pause UI가 나타남. 게임을 재개하거나 다시 시작하거나 레벨 선택 단계로 갈수 있음
-<LI><B>Option State</B></LI>기본적인 옵션 스테이트, 해상도 조절 , 풀스크린 모드, 사운드 온오프이 가능함.<LI><B>Game Logic</B></LI>Win Condition,Lose Condition등을 관리해주는 GameLogic
+<LI><B>Pause System</B></LI>
+
+<img src = "images/pause.png" width = "70%"><br>ESC키를 누르면  이전 스테이트가 저장된 상태에서 Pause State로 전환됨. 게임이 정지되고, Pause UI가 나타남. 게임을 재개하거나 다시 시작하거나 레벨 선택 단계로 갈수 있음
+<LI><B>Option State</B></LI>
+<img src = "images/option.png" width = "70%"><br>
+기본적인 옵션 스테이트, 해상도 조절 , 풀스크린 모드, 사운드 온오프이 가능함.<LI><B>Game Logic</B></LI>Win Condition,Lose Condition등을 관리해주는 GameLogic
 </B></LI><LI><B>Most of Menu State</LI>Main State,Level Select State등 대부분의 스테이트를 제작함<LI><B>Logging System</LI>
 <B>레벨의 난이도를 체크하기위해서 게임의 플레이 타임, 죽은 횟수, 클리어 시간등을 체크하는 로그 시스템
-<LI><B>Intergrated Imgui</LI>Imgui Libary를 이용해 효율적인 디버깅을 가능하게 함. 모든 오브젝트들의 속성을 조절할 수 있는 오브젝트매니저, 아키타입을 추가할 수있는 아키타입 에디터, 현재의 레벨을 저장하거나 불러올 수 있는 레벨매니저, 게임내의 사운드를 재생시킬 수 있는 사운드매니저가 포함되어 있습니다.  
+<LI><B>Intergrated Imgui</LI>
+<img src = "images/IMGUI.png" width = "70%"><br>
+Imgui Libary를 이용해 효율적인 디버깅을 가능하게 함. 모든 오브젝트들의 속성을 조절할 수 있는 오브젝트매니저, 아키타입을 추가할 수있는 아키타입 에디터, 현재의 레벨을 저장하거나 불러올 수 있는 레벨매니저, 게임내의 사운드를 재생시킬 수 있는 사운드매니저가 포함되어 있습니다.  
+
+<LI><B>Game Launcher </B></LI>
+<img src = "images/launcher.png" width = "70%"><br>
+C#으로 제작된 게임 런처. 게임 시작 전 런쳐가 실행되며, 런처에서 해상도 조절과 전체화면,언어 설정을 설정할 수 있음. 
 <br></FONT></SPAN></FONT></P>
-		
+<LI><B>Archetype Editor</B></LI>
+<img src = "images/archetypeeditor.png" width = "70%"><br>
+C#으로 제작된 아키타입 에디터. 게임내에서 사용될 아키타입을 제작할 수 있음.
+<br></FONT></SPAN></FONT></P>		
+<LI><B>Map Editor </B></LI>
+<img src = "images/mapeditor.png" width = "70%"><br>
+C#으로 제작된 맵 에디터. 맵에디터를 통해서 손쉽게 레벨 제작이 가능함.
+<br></FONT></SPAN></FONT></P>
 		</P>
 	</UL>
 </UL> 
