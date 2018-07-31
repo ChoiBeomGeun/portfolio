@@ -71,6 +71,13 @@ EN<a href="#menu">메뉴</a>
 				
 					
 				</ul>
+													<ul class="links">
+					
+					<b>프로젝트</b>
+					<li><a href="battleroyale.html">Battle Royale Project</a></li>
+
+
+				</ul>
 			</nav>
 
 		<!-- Heading -->
@@ -115,7 +122,9 @@ EN<a href="#menu">메뉴</a>
 <LI><B>Main System of  Engine</B><br>전반전인 엔진의 구조를 제작함. 
 </LI><LI><B>StateManager</B></LI>
 엔진내에서 스테이트를 관리하는 스테이트매니저. AddState,MoveState,RestartState등 다양한 기능이 있음
-<LI><B>Json File IO System</B></LI>Jsoncpp Libary를 이용해 Json Class FileIO를 만들어 ReadFile 및 WriteFile을 용이하게 함.
+<LI><B>Json File IO System</B></LI>
+<img src = "images/roterotelevel.png" width = "70%"><br>
+Jsoncpp Libary를 이용해 Json Class FileIO를 만들어 ReadFile 및 WriteFile을 용이하게 함. 이것을 통해 JSON 파일로 레벨을 불러오거나 저장할 수 있음.
 <LI><B>Object Factory based on Components</B></LI>유니티,언리얼등의 상용 엔진과 비슷한 컴포넌트 베이스의 오브젝트 팩토리. 각각의 오브젝트는 다른 컴포넌트를 가지고 있음. 
 <LI><B>Fmod SoundManager</B></LI>
 FMOD를 이용한 SoundManager. PlaySound, StopSound,PauseSound등 다양한 기능이 존재함<LI><B>Replaying System</B></LI>
@@ -128,7 +137,9 @@ FMOD를 이용한 SoundManager. PlaySound, StopSound,PauseSound등 다양한 기
 <img src = "images/option.png" width = "70%"><br>
 기본적인 옵션 스테이트, 해상도 조절 , 풀스크린 모드, 사운드 온오프이 가능함.<LI><B>Game Logic</B></LI>Win Condition,Lose Condition등을 관리해주는 GameLogic
 </B></LI><LI><B>Most of Menu State</LI>Main State,Level Select State등 대부분의 스테이트를 제작함<LI><B>Logging System</LI>
-<B>레벨의 난이도를 체크하기위해서 게임의 플레이 타임, 죽은 횟수, 클리어 시간등을 체크하는 로그 시스템
+<B>
+<img src = "images/roteLogging.png" width = "70%"><br>
+레벨의 난이도를 체크하기위해서 게임의 플레이 타임, 죽은 횟수, 클리어 시간등을 체크하는 로그 시스템
 <LI><B>Intergrated Imgui</LI>
 <img src = "images/IMGUI.png" width = "70%"><br>
 Imgui Libary를 이용해 효율적인 디버깅을 가능하게 함. 모든 오브젝트들의 속성을 조절할 수 있는 오브젝트매니저, 아키타입을 추가할 수있는 아키타입 에디터, 현재의 레벨을 저장하거나 불러올 수 있는 레벨매니저, 게임내의 사운드를 재생시킬 수 있는 사운드매니저가 포함되어 있습니다.  

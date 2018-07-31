@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112431451-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112431451-1');
+</script>
+
+	
+		<title>BattleRoyale </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/mainBattle.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">BeomGeun Choi</a>
+				<nav>
+			<a href= "battleroyaleeng.html"><span style ="color:white">KR</span>/
+EN<a href="#menu">메뉴</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html"><b>홈</b></a></li><br>
+					<b>게임</b>
+					<li><a href="helpme.html"><span style = "color:brown">Help Me!</span></a></li>
+					<li><a href="swellorshrink.html">Swell! or Shrink!</a></li>
+					<li><a href="OutandIn.html">OutAndIn</a></li>
+					<li><a href="thumbup.html">RoteRote</a></li>
+
+				</ul>
+													<ul class="links">
+					
+					<b>프로젝트</b>
+					<li><a href="battleroyale.html">Battle Royale Project</a></li>
+
+
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+		
+			<div id="heading" >
+				<h1>BattleRoyale Project</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+
+					<!-- Elements -->
+						<div class="row">
+							<div class="col-12 col-12-medium">
+
+								<!-- Text -->
+								<video controls loop muted playsinline src="images/battleroyale.mp4" width = "100%"></video></a>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 14pt"><B> 
+	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=1 STYLE="font-size: 12pt"><B>게임 장르 : 3D 배틀로얄 슈팅 게임</B><LI><B>
+	사용 엔진 : Unreal Engine</B></LI><LI><B>사용 언어 : Unreal Blueprint</B></LI><LI><B>플랫폼 : Windows</B></LI><LI><B>마일스톤 : 프로토타입<LI><B> 제작 : 최범근 1인 개발 작품</B></LI></B></LI>
+	<LI><B> 제작에 사용된 프로그램 <br> InstantTerra (프로시저럴 지형 생성 툴)<br> Adobe Fuse(캐릭터 모델)<br>Mixamo(캐릭터 애니메이션)</B></LI>
+	
+	
+	
+		<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+<h2><center><img src = "images/battleworklist.png"></center></h2>
+</a><div style="DISPLAY: none">
+<B>1.지형생성</B><br>InstantTerra 프로그램을 이용하여 지형을 하이트맵으로 변환시켜 언리얼 엔진에 적용시킴.<br>프로시저럴 폴리지 볼륨을 이용하여 나무 및 식생을 생성함.<br>랜드스케이프 스플라인을 이용하여 도로를 생성함.<br><br>
+
+<B>2.캐릭터와 애니메이션</B><br>Adobe Fuse 프로그램을 이용하여 캐릭터 모델을 생성함.<br>
+Mixamo 프로그램을 이용하여 기본적인 캐릭터 애니메이션을 생성함.<br>
+스테이트 머신을 이용한 애님그래프를 제작하여 전반적인 캐릭터 애니메이션을 관리함.<br> 
+점프 및 피격 애니메이션을 애님몽타주 재생을 이용하여 구현함.<br>
+<a href="https://blueprintue.com/blueprint/_wyuf1zh/">블루프린트</a><br>
+<iframe src="https://blueprintue.com/render/_wyuf1zh"width="800" height="600" ></iframe><br><br>
+
+<B>3.필드 아이템</B><br>언리얼의 데이터 테이블을 이용해 필드 아이템 정보를 관리함.<br>
+Line Trace 를 사용하여 플레이어가 바라보는 필드 아이템을 우선적으로 획득하는 기능을 구현함.<br>
+Item ID를 이용하여 랜덤 스폰 기능을 구현함.<br>
+<a href="https://blueprintue.com/blueprint/bjdb31wb/">블루프린트</a><br>
+<iframe src="https://blueprintue.com/render/bjdb31wb"width="800" height="600" ></iframe>
+
+<br><br>
+
+<B>4.멀티 플레이</B><br>언리얼의 소유중인 클라이언트 실행, 멀티캐스트, 노티파이 함수,액터 리플리케이션을 이용하여 멀티플레이를 구현함.<br>
+GameState를 활용하여 클라이언트간의 정보 공유가 이루어짐.<br><br>
+
+
+<B>5. 게임 로직 구현</B><br>
+로비 화면에서의 로그인 구현, 다른 플레이어 기다리기, 게임 결과창, 하단 HP바구현<br><a href="https://blueprintue.com/render/od3zxiua">블루프린트</a><br>
+<iframe src="https://blueprintue.com/render/od3zxiua" width="800" height="600" ></iframe><br>
+<B>6. 비행기와 낙하산 구현</B><br>
+시작 섬에서 출발하는 비행기 구현, 폰 빙의를 사용<br>타임라인을 이용해 부드러운 낙하산 펴짐을 구현함.
+<br><a href="https://blueprintue.com/blueprint/dde76633">블루프린트</a><br>
+<iframe src="https://blueprintue.com/render/dde76633"width="800" height="600" ></iframe>
+ <br><br>
+
+<B>7. 자기장 구현</B><br>
+Widget Blueprint를 이용하여 월드맵을 구현함.<br>주어진 자기장의 위치,크기를 통해 다음 자기장의 원을 임의로 설정하는 로직을 구현함. 
+ <br><a href="https://blueprintue.com/blueprint/q1so427w">블루프린트</a><br>
+<iframe src="https://blueprintue.com/render/q1so427w"width="800" height="600" ></iframe>
+ <br><br>
+</div>
+	
+	
+	</FONT></SPAN></FONT></P>
+	
+</UL>
+<UL>
+
+
+
+	
+
+
+
+
+
+</section>
+
+<p align="center"><FONT SIZE=12 STYLE="font-size: 7pt">&copy; This webpage is formatted by  <a href="https://templated.co/">TEMPLATED.co </p></FONT></a></center>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
