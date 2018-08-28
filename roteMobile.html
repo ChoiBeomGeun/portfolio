@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/mainBattle.css" />
+		<link rel="stylesheet" href="assets/css/mainRoteRoteMobile.css" />
 	</head>
 	<body class="is-preload">
 
@@ -71,7 +71,7 @@ EN<a href="#menu">메뉴</a>
 							<div class="col-12 col-12-medium">
 
 								<!-- Text -->
-								<video controls loop muted playsinline src="images/battleroyale.mp4" width = "100%"></video></a><br>
+								<video controls loop muted playsinline src="images/RoteMobile.mp4" width = "100%"></video></a><br>
 <UL><P STYLE="margin-bottom: 0in; line-height: 200%"><FONT SIZE=1 STYLE="font-size: 15pt">Unity Engine을 이용한 개인 모바일 게임 프로젝트 입니다.2.5년간 PC게임만 개발하던 저는 모바일 게임 제작에 임해보고 싶었습니다.
 그래서 가장 애정이 깊던 프로젝트인 RoteRote 게임을 모바일 버전으로 개발하였습니다. PC RoteRote의 게임 디자인을 Unity Engine을 이용하여 구현하였습니다.</P><br>
 	<LI><P STYLE="margin-bottom: 0in; line-height: 100%"><FONT SIZE=1 STYLE="font-size: 14pt"><B> 
@@ -82,11 +82,17 @@ EN<a href="#menu">메뉴</a>
 	
 	
 		<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
-<h2><center><img src = "images/battleworklist.png"></center></h2>
+<h2><center><img src = "images/rotemobileworklist.png"></center></h2>
 </a><div style="DISPLAY: none">
-<B>1.Json 파일을 이용한 레벨 생성</B><br>LitJson을 사용해서 기존 PC버전의 RoteRote 레벨을 유니티 엔진에서 로딩함.<br>오브젝트 스타일에 따라 지정된 프리팹을 생성함.<br><br>
 
-<B>2.월드 회전 트리거</B><br>플레이어와 충돌하면 지정된 각도로 화면을 회전시키는 트리거
+<B>1.Json 파일을 이용한 레벨 생성</B><br>
+<img src = "images/roterotemobilelevel.png" width = "70%"><br>
+LitJson을 사용해서 기존 PC버전의 RoteRote 레벨을 유니티 엔진에서 로딩함.<br>오브젝트 스타일에 따라 지정된 프리팹을 생성함.<br><br>
+
+<B>2.월드 회전 트리거</B><br>
+<img src = "images/trigger.gif" width = "70%"><br>
+
+플레이어와 충돌하면 지정된 각도로 화면을 회전시키는 트리거
 <br><br>
 
 <B>3.게임 로직 구현</B><br>클리어 존에 도달하면 다음 레벨로 넘어가는 로직.<br>
@@ -94,14 +100,18 @@ EN<a href="#menu">메뉴</a>
 
 <br><br>
 
-<B>4.플레이어 컨트롤러</B><br>좌우 이동, 벽 점프, 누르는 정도에 따른 점프 세기등을 구현함 <br>
+<B>4.플레이어 컨트롤러</B><br>
+<img src = "images/playercontroller.gif" width = "70%"><br>
+좌우 이동, 벽 점프, 누르는 정도에 따른 점프 세기등을 구현함 <br>
 카메라의 각도가 0도, 90도, 180도, 270도로 바뀔 때마다 플레이어 컨트롤러가 변화됨.<br>
 다양한 프로퍼티를 조정할 수 있어서 플레이어 컨트롤러의 세밀한 조정이 가능함<br><br>
 
 
 <B>5. UI 구현</B><br>
 게임내에서 다시 시작, 레벨 선택으로 돌아갈 수 있는 UI를 구현함<br><br>
-<B>6. 메인 메뉴, 레벨 선택, 옵션 스테이트 구현</B><br>
+<B>6. 메인 메뉴, 레벨 선택, 옵션 스테이트 구현</B>
+<img src = "images/mainmeun.gif" width = "70%"><br>
+<br>
 메인 메뉴에서 레벨 선택, 옵션 스테이트로 이동 ,게임 종료가 가능함
  <br>레벨 선택에서 지정한 레벨을 실행하거나 다시 메뉴 스테이트로 이동이 가능함.<br>
  옵션 스테이트에서 게임 소리를 끄거나 켤 수 있고 크레딧을 볼 수 있음.
