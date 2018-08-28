@@ -87,23 +87,23 @@ EN<a href="#menu">메뉴</a>
 	</B></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4 ><B>Map Editor
 </B><br>
 <img src = "images/outandInmap.png" width = "70%"><br>
-레벨 제작을 위한 맵에디터, 마우스와 키보드를 이용해 모든 오브젝트를 생성, 제거가 가능하고 각각의 오브젝트의 크기, 위치, 각도등 변경 가능 또한 기존의 레벨을 불러오기 및 저장하기 가능, 런타임 단계에서 레벨 테스트도 가능함.
+레벨 제작을 위한 맵에디터를 제작함, 마우스와 키보드를 이용해 모든 오브젝트를 조정이 가능함 또한 기존의 레벨을 불러오는 기능과 저장하는 기능을 구현함.
 맵에디터 사용 방법을 알려 줄 UI 또한 존재해 쉽게 사용가능.
-<LI><B>ObjectManager</B><br>게임 내에서 오브젝트들을 관리하는 오브젝트 매니저. 오브젝트에 대한 모든 정보를 가지고 있으며, 레벨 안에서 자동으로 맵 에디터로 제작된 텍스트파일을
-불러와서 레벨을 로딩함.</LI><LI><B>Applying All Physics to the Objects</B></LI>
+<LI><B>ObjectManager</B><br>게임 내에서 오브젝트들을 관리하는 오브젝트 매니저를 제작함. 게임 내 오브젝트에 대한 모든 정보를 가지고 있으며,맵 에디터로 제작된 텍스트파일을
+통해 레벨을 로딩하는 로직을 구현함.</LI><LI><B>Applying All Physics to the Objects</B></LI>
 <img src = "images/OutandInlevel.png" width = "70%"><br>
-오브젝트 매니저를 이용해 각각의 물체들의 오브젝트 스타일을 구분해서 모든 물체들에게 필요한 물리들을 적용시킴.
+오브젝트 매니저를 이용해 게임 내 오브젝트들의 오브젝트 스타일을 구분해서 모든 물체들에게 필요한 물리들을 적용시키는 로직을 구현함.
 <LI><B>Gravity Zone</B></LI>
 <img src = "images/outgravity.gif" width = "70%"><br>
-공이 Gravity Zone에 들어오면 공의 속도에 다른 힘을 주어 방향을 전환 시킴.
+공이 Gravity Zone에 들어오면 공의 속도에 다른 힘을 주어 방향을 전환 시키는 로직을 구현함.
 <LI><B>Breakable Wall</B></LI>
 <img src = "images/outbreakable.gif" width = "70%"><br>
-공으로 파괴할수있는 벽, 사용자의 설정에 따라서 부숴지기에 필요한 횟수를 바꿀 수 있음.
+공으로 파괴할수있는 벽, 사용자의 설정에 따라서 벽의 강도를 바꿀 수 있음.
 <LI><B>Art Assets</B></LI>
 게임내의 대부분의 아트 에셋을 직접 제작함<LI><B>Score System</B></LI>
 <img src = "images/outscore.gif" width = "70%"><br>
-모든 레벨에는 3개의 별이 존재함. 레벨 클리어시 획득한 별의 갯수를 저장하고 레벨 선택 단계에서 각 레벨마다의 획득한 별을 갯수를 표시함. 플레이 테스트 당시 많은 사용자들이 별을 먹기위해 노력하였음.
-<LI><B>Instruction System</B></LI>플레이어가 쉽게 플레이할 수 있도록 조작법등의 UI를 화면에서 표시해줌</B></LI><br></FONT></SPAN></FONT></P>
+모든 레벨에는 3개의 별이 존재함. 획득한 별의 개수를 세이브 파일에 저장하고 레벨 선택 단계에서 획득한 별을 갯수를 표시하는 로직들을 구현함.
+<LI><B>Instruction System</B></LI>플레이어가 쉽게 플레이할 수 있도록 조작법등의 UI를 화면에서 표시하는 로직을 구현함</B></LI><br></FONT></SPAN></FONT></P>
 		
 		</P>
 	</UL>
@@ -181,7 +181,7 @@ EN<a href="#menu">메뉴</a>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
 		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">Out & In 은 레벨을 클리어하기 위해서 플레이어가 공을 특정 구역에 도달하게 해야하는 게임입니다. 이를 위해서는 플레이어가 화살표 키보드와 스페이스 바를 사용하여 대포의 각도와 힘을 조절해야 합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">플레이어의 라이프 수는 제한적입니다. 플레이어가 별을 획득하면 더 높은 클리어 등급을 받을 수 있습니다. 하지만, 처리해야 할 장애물이 있기 때문에, 플레이어들은 행동을 취하기 전에 생각해야 합니다.</FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">플레이어의 라이프 수는 제한적이고 많은 장애물들이 있기 때문에, 플레이어들은 신중하게 대포를 발사해야합니다.</FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 
 		
 	
@@ -192,17 +192,17 @@ EN<a href="#menu">메뉴</a>
 	<UL>
 	<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>스플래시 스크린</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 게임이 시작되면Digipen로고와 팀 DizzyPen ,Fmod의 짧은 스플래시 화면이 표시됩니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 게임이 시작되면 Digipen로고와 팀 DizzyPen ,Fmod의 짧은 스플래시 화면이 표시됩니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>옵션</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
 		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 옵션 스테이트에서 사용자는 창모드 설정과 전체화면 모드를 설정할 수 있고, 게임 데이터를 초기화 시킬 수 있습니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>메뉴</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> Out and In 에는 30개의 레벨이 존재합니다. 레벨 셀렉트 스테이트에서 마우스를 이용해 레벨을 선택할 수 있습니다. 하지만 그 전레벨을 클리어해야만 다음 레벨을 선택할 수 있습니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> Out and In 에는 30개의 레벨이 존재합니다. 레벨 셀렉트 스테이트에서 마우스를 이용해 레벨을 선택할 수 있습니다.전 레벨을 클리어해야만 다음 레벨을 선택할 수 있습니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>게임스크린</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 게임이 시작되면 레벨마다 대포의 위치가 정해집니다. 하지만, 대포의 각도와 힘은 플레이어에 의해 결정됩니다. 각 레벨마다, 플레이어들이 그 단계를 클리어하는데 시간을 보낼 수 있도록, 다루어야 할 여러가지 장애물이 있습니다. 플레이어가 레벨을 클리어할려면 공을 클리어 존에 놓아야 합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 게임이 시작되면 레벨마다 대포의 위치가 정해집니다.대포의 각도와 힘은 플레이어에 의해 결정됩니다. 각 레벨마다 여러가지 장애물이 있습니다. 플레이어가 레벨을 클리어할려면 공을 클리어 존에 향해 발사해야 합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 
 	</UL>
 	
@@ -211,22 +211,22 @@ EN<a href="#menu">메뉴</a>
 	<UL>
 	<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>물리</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 	이 게임의 주요한 물리학은 중력, 충돌(collision) 그리고 튕김(reflection)에 초점을 맞추고 있습니다. 중력은 실생활처럼 작동하는 물체를 만들어서 게임을 하는데 도움을 줄것이다. 중력은 포탄과 몇몇 장애물에 적용됩니다.이 충돌은 플레이어가 더 복잡한 수준의 레벨을 클리어하는 데 도움을 주는 핵심적인 요소입니다.
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 	이 게임의 주요한 물리학은 중력, 충돌(collision) 그리고 튕김(reflection)에 초점을 맞추고 있습니다. 중력은 포탄과 몇몇 장애물에 적용됩니다. 이러한 여러 물체간의 충돌을 이용해 플레이어는 레벨을 클리어해야합니다.
 튕김도 이 게임에서 중요한 역할을 힙니다. 공이 지면에 떨어질 때, 공은 반사되어야 한다. 또한, 공이 힘을 가지고 벽 위에 충돌한다면, 그것은 반사되어야 합니다. 
   </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>조작법</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">  기본적인 조작법은 화살표 키를 사용하여 공을 쏘는 대포의 각도를 조절하는 것이다. 플레이어가 각도를 결정한 후에 스페이스 바를 누르면 대포의 힘이 결정됩니다. 공이 벽보다 높이 올라가야 할 경우, 플레이어가 오랫동안 스페이스 바를 눌러야 공이 벽을 넘어가기에 충분할 것이다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">  기본적인 조작법은 화살표 키를 사용하여 공을 쏘는 대포의 각도를 조절하고 스페이스 바를 누르면 대포의 발사 세기가 결정됩니다. 공으로 벽을 넘겨야 할 경우,오랫동안 스페이스 바를 눌러야합니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>승리 조건</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">  이기는 조건은 매우 간단합니다. 목표 지역에 공을 놓는 것입니다. 하지만 많은 장애물이 존재하기 때문에 높은 레벨을 쉽게 클리어하는 것은 어렵습니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">  이기는 조건은 매우 간단합니다. 목표 지역에 공을 발사하는 것 입니다.레벨마다 많은 장애물이 존재하기 때문에 쉽게 레벨을 클리어하는 것은 어렵습니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>패배 조건</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3번의 기회가 있습니다. 플레이어가 주어진 기회안에 레벨을 클리어하지못한다면 게임에서 패배합니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3번의 기회가 있습니다. 플레이어가 주어진 라이프안에 레벨을 클리어하지못한다면 게임에서 패배합니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 <LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>스코어 시스템</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3개의 별이 존재합니다. 많은 별을 먹을때마다 점수가 올라갑니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3개의 별이 존재합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 
 	</UL>
 	
@@ -240,17 +240,17 @@ EN<a href="#menu">메뉴</a>
   </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>라이프</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 라이프는 특정 숫자로 제한되어있고, 볼이 레벨밖으로 나가면 라이프를 잃고 공이 모든 추진력을 잃는다면 라이프를 잃습니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 라이프는 특정 숫자로 제한되어있고, 공이 화면 밖으로 나가거나 모든 추진력을 잃거나 가시에 충돌하면 라이프를 잃습니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		
 			<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>HUD</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> HUD 측면에서 라이프의 갯수와 현재의 레벨 단계, 대포의 현재 각도를 보여줍니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 라이프의 갯수와 현재의 레벨 단계, 대포의 현재 각도를 보여주는 HUD가 존재합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 		<LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>사운드</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
 		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 기본적인 배경음악이 재생되고 대포에서 공이 발사될때 소리가 재생되고 , 승리하거나 패배할때에도 사운드가 재생됩니다.모든 사운드는 디지펜 사운드 에셋을 이용합니다. </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 <LI><P STYLE="margin-bottom: 0.11in"><SPAN STYLE="font-variant: small-caps"><FONT COLOR="#5b9bd5"><B>스코어 시스템</B></FONT></SPAN></P>
 		<LI><P ALIGN=LEFT STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 100%; widows: 2; orphans: 2">
-		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3개의 별이 존재합니다. 많은 별을 먹을때마다 점수가 올라갑니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
+		<FONT FACE="Gulim"><FONT SIZE=3><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"> 레벨마다 3개의 별이 존재합니다.  </FONT></FONT></SPAN></FONT></FONT><FONT FACE="Gulim, serif"><FONT SIZE=3><FONT COLOR="#000000"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt">.</FONT></FONT></FONT></FONT></FONT></P>
 
 	</UL>
 	
@@ -271,24 +271,31 @@ EN<a href="#menu">메뉴</a>
 <P CLASS="western" STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=6 STYLE="font-size: 22pt"><B>개발
 팀</B></FONT></FONT></SPAN></FONT></P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0.11in"><A NAME="_GoBack"></A><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>현준, 범근,성현은 이전 학기까지 기숙사에서 같이 살았다. 같이 살면서 우리는 지식과 우정을 나누었다. 우리는 스시 레스토랑에서 점심을 같이 먹으면서 같이 일하기로 결정하였다. 우리는 개인의 능력에 대해 이야기를 나누었고 팀으로 일하기로 결정했다. 개개인의 능력을 자세하게 설명하자면 현준은 팀을 이끌 리더쉽이 있고, 그는 좋은 작문 실력을 가지고 있어서 프로듀서로서 이 프로젝트에 참여했다. 범근이는 관찰과 분석에 탁월해서 팀에서의 테스트 매니저 역할을 맡았다. 다른 맴버들보다 수학과 물리를 잘하는 성현은 물리 파트를 맡았다. 마지막으로, 매우 창의적이고 우리 팀에게 동기 부여를 줄 수 있는 현민이는 리드 디자이너의 역할을 맡았다.</FONT></SPAN></FONT><FONT SIZE=4>.
+	<LI><P STYLE="margin-bottom: 0.11in"><A NAME="_GoBack"></A><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>현준, 범근,성현은 이전 학기까지 기숙사에서 같이 살면서 서로의 지식을 나누고 우정을 쌓았다. 
+	이러한 결과로 우리는 초밥 레스토랑에서 점심을 같이 먹으면서 팀을 하기로 결정하였다. 
+	개개인의 능력을 자세하게 설명하자면 현준은 팀을 이끌 리더쉽이 있고, 그는 좋은 작문 실력을 가지고 있어서 프로듀서로서 이 프로젝트에 참여했다. 범근은 관찰과 분석에 탁월해서 팀에서의 테스트 매니저 역할을 맡았다.
+	다른 맴버들보다 수학과 물리를 잘하는 성현은 물리 파트를 맡았다.
+	마지막으로, 매우 창의적이고 우리 팀에게 동기 부여를 줄 수 있는 현민이는 리드 디자이너의 역할을 맡았다.</FONT></SPAN></FONT><FONT SIZE=4>.
 	
 </UL>
 <P CLASS="western" STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=6 STYLE="font-size: 22pt"><B>툴</B></FONT></FONT></SPAN></FONT></P>
 <UL>
-	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>오디오 파일의 길이를 줄이기 위해 “Audacity”가 사용되었다.</FONT></SPAN></FONT><FONT SIZE=4>.
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>오디오 파일의 길이를 줄이고 편집하기 위해 “Audacity”가 사용되었다.</FONT></SPAN></FONT><FONT SIZE=4>.
 	</FONT>
 	</P>
-	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=4> </FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>우리는 “paint.net” 을 사용하여 사용자 인터페이스, 문자와 같은 그래픽 자료를 제작했습니다. 
-VisualStudio와 WarpEngine 으로 코딩을 하였으며 실제 게임을 만들었습니다.
+	<LI><P STYLE="margin-bottom: 0.11in"><FONT SIZE=4> </FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4>우리는 “paint.net” 을 사용하여 사용자 인터페이스, 게임 내 문자와 같은 그래픽 자료를 제작했습니다. 
+VisualStudio와 WarpEngine 으로 게임을 제작하였습니다.
 </FONT></SPAN></FONT></P>
 </UL>
 <P CLASS="western" STYLE="margin-bottom: 0.11in"><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT COLOR="#000000"><FONT SIZE=6 STYLE="font-size: 22pt"><B>잘된
 점</B></FONT></FONT></SPAN></FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Trebuchet MS, serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>1.</B></FONT></FONT><FONT FACE="Arial"><SPAN LANG="ko-KR"><FONT SIZE=4 STYLE="font-size: 16pt"><B>의사소통</B></FONT></FONT></SPAN></FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0.11in"> 
-<FONT FACE="Arial"><SPAN LANG="ko-KR">게임 디자인과 컨셉을 공유하는 회의를 통해 우리는 Angrybird와 같은 2D발사체 게임을 만들기로 결정하였습니다. 우리의 게임을 만들어 내는 능력이 확실치 않아서 많은 다른 아이디어들이 폐기되었습니다. 우리가 디자인한 게임을 만들 수 있는지 확인하고 싶었습니다.
-프로젝트 초기에 팀에 의사 소통에 문제가 있었다. 한 멤버가 자신의 개인적인 문제로 바빴다. 우리 팀은 훨씬 더 일찍 문제를 발견할 수 있도록 더 자주 대화하고 소통하기로 약속했었다.초기에는 그가 어디 있는지 몰라서 팀 역할을 배정하는 것이 어려웠다. 하지만, 우리가 여러번의 대화를 나눈 후에, 우리 팀은 그의 상황을 훨씬 더 잘 이해했고, 팀원들은 서로 이야기하고 역할을 배정할 수 있었다. 
+<FONT FACE="Arial"><SPAN LANG="ko-KR">
+게임 디자인과 컨셉을 공유하는 회의를 통해 우리는 Angrybird와 같은 2D발사체 게임을 만들기로 결정하였습니다. 
+우리의 게임을 만들어 내는 능력이 확실치 않아서 많은 다른 아이디어들이 폐기되었습니다. 우리가 디자인한 게임을 만들 수 있는지 확인하고 싶었습니다.
+프로젝트 초기에 팀에 의사 소통에 문제가 있었다. 한 멤버가 자신의 개인적인 문제로 바빴다. 우리 팀은 훨씬 더 일찍 문제를 발견할 수 있도록 더 자주 대화하고 소통하기로 약속했었다.
+초기에는 그가 어디 있는지 몰라서 팀 역할을 배정하는 것이 어려웠다. 하지만, 우리가 여러번의 대화를 나눈 후에, 우리 팀은 그의 상황을 훨씬 더 잘 이해했고, 팀원들은 서로 이야기하고 역할을 배정할 수 있었다. 
 그 후, 문제가 해결되었고, 우리는 평소보다 더 자주 서로 의사 소통을 했다. 우리는 종종 옳고 그름에 대해 논의하고, 아이디어를 계속 가지고 있을지 여부를 결정하고, 미래를 위해 게임 전체를 디자인하는 방법을 결정했습니다.
 우리는다른 팀들보다 더 많은 토론을 해서, 우리의 팀원들이 서로 빠르고 즉시 피드백을 받을 수 있을 것으로 믿고 있었다.
 </SPAN></FONT>.</P>
